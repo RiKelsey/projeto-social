@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset "";
 
 * {
     margin: 0px;
@@ -6,24 +6,15 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-html, body {
-    width: 100vw;
-    height: 100vh;
-    background-color: black;
-}
-
 body {
-    background: url(../imagens/fundo.jpg) no-repeat top center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-main {
-    position: relative;
+    width: 100vw ;
     height: 100vh;
+    background: black url(../imagens/fundo.jpg) no-repeat top center;
+    background-size: cover;
+    position: relative;
 }
 
-section#telefone {
+section#tela {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -31,14 +22,34 @@ section#telefone {
 
     width: 311px;
     height: 627px;
-    background: url(../imagens/frame-iphone.png) no-repeat;
+    background: url(../imagens/frame-iphone.png);
 }
 
-iframe#tela {
+iframe {
     position: relative;
+
+    width: 267px;
+    height: 471px;
+
     top: 80px;
     left: 22px;
+}
 
-    width: 268px;
-    height: 472px;
+section#menu {
+    text-align: right;
+}
+
+img {
+    margin: 8px;
+    border-radius: 50%;
+    width: 50px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.692);
+    box-sizing: border-box;
+}
+
+img:hover {
+    width: 80px;
+    border: 2px solid white;
+    transition-duration: 0.1s;
+   
 }
